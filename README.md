@@ -12,7 +12,9 @@ ipsem Loren
 
 ## Executive Summary
 
-Ipsem Lorem
+The focus of this project is to identify the characteristics and traits of most successful Kickstarter canmpaigns. Our analysis will focus on incroporating outside knowledge as well as diving into the timeframes and topics that are most successful on the site. The ultimate goal of the project is to create a model that will allow those with active kickstarter campaigns to be able to get a probability of success by putting in simple features into an online deployed model. 
+
+The project will employ Natural Language Processing of the titles and descriptions as well as data about timeframe of campaigns starts.
 
 ---
 
@@ -21,7 +23,6 @@ Ipsem Lorem
 1. [Loading Packages and Reading Data](#Loading-Packages-and-Reading-Data)
 1. [Background Infomation](#Background-Infomation)
 1. [Data Dictionary](#Data-Dictionary)
-    - [The false promise of the dNBR](#The-false-promise-of-the-dNBR)
 1. [Data Cleaning](#Data-Cleaning)
 1. [EDA](#EDA)
 1. [Model Preparation](#Model-Preparation)
