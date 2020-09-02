@@ -3,3 +3,5 @@
 code/.DS_Store
 data/.DS_Store
 code/empty.txt
+code/.ipynb_checkpoints
+*.csv
