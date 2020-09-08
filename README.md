@@ -50,7 +50,7 @@ The analysis will also incorporate current articles that have been pubished by K
 |launched|datetime|df|Date When Campaign Was Created and Started|
 |deadline|datetime|df|Designated End Date of Campaign|
 |pledged|float|df|Amount Pledged In Amount of Currency|
-|usd_pledged|float|df|Trasnlated Amount Pledged in US Dollars|
+|usd_pledged|float|df|Amount Pledged in US Dollars|
 |goal|float|df|Amount That Creator Needs To Complete Project|
 |backers|int|df|Number of Users That Have Donated to the Campaign|
 |country|object|df|Country In Which the Campaign is Taking Place|
