@@ -1,5 +1,5 @@
 # Kickstarter Campaigns
-## lorem ipsem
+## August 2020
 
 
 * Tyler Zarnik Github: atTlr
@@ -8,28 +8,29 @@
 
 ## Problem Statement
 
-ipsem Loren
+In accordance with Kickstarter’s continued efforts to operate as a “Benefit Corporation”,  the company is looking to take a data driven approach to continue to provide information that fosters more successful campaigns from creators on the platform. These data driven insights may be able to help creators understand what successful campaigns are doing right. There is also a desire to have this data predict which campaigns will be successful based on metrics of similar campaigns provided. 
 
 ## Executive Summary
 
-The focus of this project is to identify the characteristics and traits of most successful Kickstarter canmpaigns. Our analysis will focus on incroporating outside knowledge as well as diving into the timeframes and topics that are most successful on the site. The ultimate goal of the project is to create a model that will allow those with active kickstarter campaigns to be able to get a probability of success by putting in simple features into an online deployed model. 
+the primary purpose of this project is to attempt to compile a comprehensive analysis of publicly available Kickstarter datasets with the goal to provide visualizations of the data as well as a machine learning model that will predict and give a probability of if the campaign will be successful.
 
-The project will employ Natural Language Processing of the titles and descriptions as well as data about timeframe of campaigns starts.
+We will incorporate the python libraries pandas, numpy, and matplotlib for the Data Cleaning and Data Visualization steps of the project. Sklearn will be the library used for the machine learning model. We will be utilizing Amazon Web Services (AWS) to run and return our fitted model. A logistic regression will be used for the explanatory model while a random forest classifier will be used for a more predictive model. Natural Language Processing will additionally be used as further exogenous variables within our modeling pipeline as a way to incorporate the title and description of the Kickstarter Campaign as well.
+
+The analysis will also incorporate current articles that have been pubished by Kickstarter themselves as 'best practices' for running a campaign. We will look to corroborate any of these 'best practices' if they can be shown through the data as well as provide our own reccomendations based on our model.
 
 ---
 
 ## Table of Contents
 
-1. [Loading Packages and Reading Data](#Loading-Packages-and-Reading-Data)
-1. [Background Infomation](#Background-Infomation)
-1. [Data Dictionary](#Data-Dictionary)
-1. [Data Cleaning](#Data-Cleaning)
-1. [EDA](#EDA)
-1. [Model Preparation](#Model-Preparation)
-1. [Modeling](#Modeling)
-1. [Model evaluation](#Model-evaluation)
-1. [Conclusions and Recommendations]([Conclusions-and-Recommendations)
-2. [References](#References)
+- [Preliminary Data On Kickstarter](#Preliminary-Data-On-Kickstarter)
+- [Tips Normally Explaining Successful Campaigns](#Tips-Normally-Explaining-Successful-Campaigns)
+- [Data Dictionary](#Data-Dictionary)
+- [Data Collection](#Data-Collection)
+- [Imports](#Imports)
+- [Exploratory Data Analysis](#EDA)
+- [Preprocessing & Modeling](#Preprocessing-&-Modeling)
+- [Evaluation and Selection](#Evaluation-and-Selection)
+- [Conclusion and Recommendations](#Conclusion-and-Recommendations)
 
 
 --- 
@@ -39,6 +40,23 @@ The project will employ Natural Language Processing of the titles and descriptio
 
 |Feature|Type|Dataset|Description|
 |---|---|---|---|
+|id|object|df|Identifing ID For Each Campaign|
+|name|object|df|Name and Description of the Campaign|
+|category|object|df|Subcategory Description of the Campaign|
+|main_category|object|df|Category Of the Campaign|
+|currency|object|df|Currency of Pledged Amount|
+|launched|datetime|df|Date When Campaign Was Created and Started|
+|deadline|datetime|df|Designated End Date of Campaign|
+|pledged|float|df|Amount Pledged In Amount of Currency|
+|usd_pledged|float|df|Trasnlated Amount Pledged in US Dollars|
+|goal|float|df|Amount That Creator Needs To Complete Project|
+|backers|int|df|Number of Users That Have Donated to the Campaign|
+|country|object|df|Country In Which the Campaign is Taking Place|
+|spotlight|object|df|If The Campaign Was Spotlighted on the Kickstarter Website|
+|staff_pick|object|df|If the Campaign Was Endorsed by the Staff at Kickstarter|
+|duration|int|df|Length In Days of Kickstarter Campaign|
+|month_launched|object|df|Month in Which Campaign Was Launched|
+|result|int|df|Whether the Campaign Reached The Goal Set|
 
 
 ## Conclusions and Recommendations
@@ -48,4 +66,7 @@ Ipsem Lorem
 
 ## References
 
-Ipsem Lorem
+- https://www.kickstarter.com/help/stats?ref=global-footer
+- https://www.forbes.com/sites/jaredhecht/2020/08/31/is-crowdfunding-a-good-option-for-businesses-during-the-pandemic/#3184ee5565f0
+- https://www.kickstarter.com/charter?ref=global-footer
+- https://www.cnbc.com/2014/09/23/the-man-who-made-50-million-ditching-kickstarter.html
