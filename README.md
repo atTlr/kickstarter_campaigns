@@ -10,6 +10,8 @@
 
 In accordance with Kickstarter’s continued efforts to operate as a “Benefit Corporation”,  the company is looking to take a data driven approach to continue to provide information that fosters more successful campaigns from creators on the platform. These data driven insights may be able to help creators understand what successful campaigns are doing right. There is also a desire to have this data predict which campaigns will be successful based on metrics of similar campaigns provided. 
 
+---
+
 ## Executive Summary
 
 the primary purpose of this project is to attempt to compile a comprehensive analysis of publicly available Kickstarter datasets with the goal to provide visualizations of the data as well as a machine learning model that will predict and give a probability of if the campaign will be successful.
@@ -58,6 +60,7 @@ The analysis will also incorporate current articles that have been pubished by K
 |month_launched|object|df|Month in Which Campaign Was Launched|
 |result|int|df|Whether the Campaign Reached The Goal Set|
 
+---
 
 ## Conclusions and Recommendations
 
@@ -65,7 +68,7 @@ Deploy a model that will be able to return the probability that a campaign will 
 
 As revenue for the company is derived directly from the success of its creators, Kickstarter has an incentive to invest in its creators as much as possible. While there are great resources provided by Kickstarter on best practices and beginners info, this info sometimes is not directly tailored to a customer. Creating and deploying a model that is able to give a predicted probability of success as well as identify important features of successful campaigns, will aid new creators to be successful. As seen, creators that have successful campaigns will also be more likely to have future successful campaigns which also often get more pledge USD per campaign.
 
-  
+---
 
 ## References
 
