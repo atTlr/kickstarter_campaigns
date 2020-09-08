@@ -61,7 +61,10 @@ The analysis will also incorporate current articles that have been pubished by K
 
 ## Conclusions and Recommendations
 
-Ipsem Lorem
+Deploy a model that will be able to return the probability that a campaign will succeed based on simple stats such as backer count, duration, title/description, goal, and current pledged amount. With the deployed logistic regression, it can give specific tailored information on best ways to move forward with the strongest coefficients. Incentivize repeat creator projects. Give lower percentages to creators who consistently produce successful campaigns. Work to give more spotlight to newer campaigns and encourage past successful creators to re-engage with the platform with discount percentage incentives.
+
+As revenue for the company is derived directly from the success of its creators, Kickstarter has an incentive to invest in its creators as much as possible. While there are great resources provided by Kickstarter on best practices and beginners info, this info sometimes is not directly tailored to a customer. Creating and deploying a model that is able to give a predicted probability of success as well as identify important features of successful campaigns, will aid new creators to be successful. As seen, creators that have successful campaigns will also be more likely to have future successful campaigns which also often get more pledge USD per campaign.
+
   
 
 ## References
